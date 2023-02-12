@@ -1,0 +1,115 @@
+/* 
+    estilo para el encabezado
+    ir al html, ir a etiqueta header,
+    agregar id="encabezado" en etiqueta header
+*/
+
+#encabezado {
+    position: absolute; /*   */
+    top: 0; /* el estilo inicia desde arriba de la pantalla */
+    left: 0; /* el estilo inicia desde la izquierda de la pantalla  */
+    height: 8%; /* que tan alto es el header, es poquito para que no se extienda verticalmente  */
+    width: 100%; /* para que se extiende horizontalmente  */
+    background-color: midnightblue; /* color del fondo  */
+    color: white; /* color del texto  */
+}
+
+/* estilo que le aplica a todos los h1 que esten dentro de #encabezado */
+
+#encabezado h1 {
+    display:inline;  /* para que se escriba en el "primer renglon" del header y no tocando el fondo del elemento */
+}
+
+/* estilo para el menu con los botones de navegacion */
+
+#menu {
+    position: absolute; /*   */
+    top: 8%; /* 8% porque ahi termina el tamano del encabezado */
+    left: 0; /* el estilo inicia desde la izquierda de la pantalla  */
+    height: 4%; /* que tan alto es el header, es poquito para que no se extienda verticalmente  */
+    width: 100%; /* para que se extiende horizontalmente  */
+    background-color: chocolate; /* color del fondo  */
+    color: plum; /* color del texto  */
+}
+
+/* uso de estilo con pseudo clases para anclas dentro del menu*/
+/* hover se activa cuando el usuario posiciona el cursor sobre el elemento */
+#menu a:hover {
+    background-color: greenyellow;
+    color: red;
+}
+
+#barraLateral {
+    position: absolute; /*   */
+    top: 12%; /* 12% porque el encabezado agarra 8% y el menu agarra otro 4%. entonces la barra inicia en 12%  */
+    left: 0; /* el estilo inicia desde la izquierda de la pantalla  */
+    height: 79.55%; /* que tan alto es el header, es poquito para que no se extienda verticalmente  */
+    width: 20%; /* 20% de ancho para que solo se vea a un lado  */
+    background-color: lightgreen; /* color del fondo  */
+    padding: 10px;          /*    para que se vea como se corra hacia un lado     */
+    color: darkslateblue; /* color del texto  */
+}
+
+#contenido {
+    position: absolute; /*   */
+    top: 12%; /* 12% porque el encabezado agarra 8% y el menu agarra otro 4%. entonces el contenido inicia en 12%  */
+    left: 20%; /* porque inicia a la par de #barraLateral que tiene width de 20%  */
+    height: 82%; /* que tan alto es el header, es poquito para que no se extienda verticalmente  */
+    width: 80%; /* 80% de ancho porque #barraLateral tiene 20%. 80+20 hacen el 100% del ancho de la pantalla */
+    background-color: wheat; /* color del fondo  */
+    color: darkgreen; /* color del texto  */
+    overflow: auto; /* recorta el contenido cuando se sale del contenedor. scrollea el contenido dentro del contenedor */
+}
+
+#piePagina {
+    position: absolute; /*   */
+    bottom: 0%; /* bottom para indicarle la distancia desde el fondo. 0% para indicar que inicia en el fondo  */
+    left: 0; /* para que se despliegue desde el primer pixel izquierdo de la pantalla  */
+    height: 6%; /* que tan alto es el footer*/
+    width: 100%; /* 100% del ancho de la pantalla */
+    background-color: darkblue; /* color del fondo  */
+    color: lime; /* color del texto  */
+    text-align: center; /* recorta el contenido cuando se sale del contenedor. scrollea el contenido dentro del contenedor */
+}
+
+.tituloProducto{
+    font-size: 30px;
+    color: darkolivegreen;
+    margin-top: 20px;
+}
+
+h1,h2 {
+    color: teal;    
+}
+
+#encabezadoTabla {
+    background-color: darkcyan;
+    color: yellow;
+    text-align: center;
+}
+
+/* Para la tabla: estilo para ponerle un color a las celdas pares y otro a las impares */
+
+/* a todos los elementos TR impares de la tabla resumen, aplique esto */
+#tablaResumen tr:nth-child(odd) {
+    background-color: midnightblue;
+    color: darkkhaki;
+}
+
+#tablaResumen tr:nth-child(even) {
+    background-color: darkkhaki;
+    color: midnightblue;
+}
+
+/* Tabla: poenrle un estilo a una celda individual */
+
+#tablaResumen tr:nth-child(2) {
+    color:white;
+    background:coral;
+}
+
+#tablaResumen2 {
+    text-align: center;
+    background-color: midnightblue;
+    color: peachpuff;
+}

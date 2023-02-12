@@ -1,17 +1,139 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>Página Principal</title>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/estilos.css" rel="stylesheet" type="text/css"/> <!<!-- hay que agregar la hoja de estilos -->
     </head>
     <body>
-        <h1>Página incial</h1>
-        <p>Esta es la primera página del curso Web y Patrones</p>
+        
+        <header id="encabezado">
+        <h1>Tienda en línea</h1>
+        <br>
+        </header>
+        
+        <nav id="menu">
+            <a href="Ejemplo9.html" style="font-size: 30px">Atrás</a>
+            <a href="index.html" style="font-size: 30px">Home</a>
+            <a href="Ejemplo3.html" style="font-size: 30px">Adelante</a>
+        </nav>
+        <aside id="barraLateral">
+            <h2>Productos más vendidos</h2>
+            <p>Lorem ipsum <strong>dolor sit amet consectetur adipiscing elit </strong>tempus cras, class cum nunc euismod velit commodo diam nullam in, ultricies
+            </p>
+            <ol>
+                <li style="font-size: 20px">Computadoras</li>
+                <li style="font-size: 20px">Headsets</li>
+                <li style="font-size: 20px">Teclados</li>                
+            </ol>
+        </aside>
+        
+        <section id="contenido">
+            <h2 style="color:peru">Artículos principales</h2>
+            
+            <article>
+                <header class="tituloProducto">Asus Vivobook</header>
+                <p>Lorem ipsum <strong>dolor sit amet consectetur adipiscing elit </strong>tempus cras, class cum nunc euismod velit commodo diam nullam in, ultricies
+                </p>
+                <figure>
+                    <img src="images/asus-vivobook.jpg" alt="" width="200"/>
+                    <figcaption>Modelo de referencia</figcaption>
+                </figure>
+            </article>
+            <article>
+                <header class="tituloProducto">AlienWare ATD 9000</header>
+                <p>Lorem ipsum <strong>dolor sit amet consectetur adipiscing elit </strong>tempus cras, class cum nunc euismod velit commodo diam nullam in, ultricies
+                </p>
+                <figure>
+                    <img src="images/alienwarelineup-1650564884339.jpg" alt="" width="200"/>
+                    <figcaption>En oferta</figcaption>
+                </figure>
+            </article>
+            <article>
+                <header class="tituloProducto">Impresora 3D Portatil</header>
+                <p>Lorem ipsum <strong>dolor sit amet consectetur adipiscing elit </strong>tempus cras, class cum nunc euismod velit commodo diam nullam in, ultricies
+                </p>
+                <figure>
+                    <img src="images/impresora3d.jpg" alt="" width="200"/>
+                    <figcaption>Economico</figcaption>
+                </figure>
+            </article>           
+            <article>
+                <table border="0">
+                    <thead id="encabezadoTabla">
+                        <tr>
+                            <th>Codigo</th>
+                            <th>Nombre de linea</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tablaResumen">
+                        <tr>
+                            <td>1</td>
+                            <td>Tarjetas madre</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Monitores</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Teclados</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Mouse</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Tarjetas de video</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Headsets</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>Laptops</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>Cargadores</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br>
+                <!-- como hacer una tabla que unifica celdas. tiene 2 filas y 3 columnas -->
+                <!-- se borro un TH para que quede "descuadrado" -->
+                <table id="tablaResumen2" border="2">
+                    <thead>
+                        <tr>
+                            <th>Articulo</th>
+                            <!-- se agrega colspan="" para fusionar celdas-->
+                            <!-- colspan=2 en esta linea significa que Precio abarcara 2 columnas -->
+                            <th colspan="2">Descripcion</th>                           
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- primera fila-->
+                        <tr>
+                            <td>Monitor</td>
+                            <td>115000</td>
+                            <td> 30 pulgadas</td>
+                        </tr>
+                        <!-- segunda fila-->
+                        <tr>
+                            <td>Disco duro</td>
+                            <td>75000</td>
+                            <td>100 GB</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </article>
+
+
+        </section>       
+        <footer id="piePagina">Derechos Reservados &COPY; <address style="display: inline"> Tibás, Colima </address> </footer>
+        
     </body>
 </html>
